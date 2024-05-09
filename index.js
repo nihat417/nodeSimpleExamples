@@ -62,23 +62,23 @@ const { error } = require('console');
 
 //Dif version
 
-const server = http.createServer((req,res)=>{
-    console.log('request made');
-    res.setHeader('Content-Type','text/html');
-    //res.write('Hello Niko');
-    //res.write("<a href='https://www.google.com' target='_blank'>Go to Google </a>");
-    //res.end();
-    fs.readFile("index.html",(err,data)=>{
-        if(err){
-            console.log(`Error : ${err}`);
-            res.end();
-        }
-        res.write(data);
-        res.end();
-    });
-})
+// const server = http.createServer((req,res)=>{
+//     console.log('request made');
+//     res.setHeader('Content-Type','text/html');
+//     //res.write('Hello Niko');
+//     //res.write("<a href='https://www.google.com' target='_blank'>Go to Google </a>");
+//     //res.end();
+//     fs.readFile("index.html",(err,data)=>{
+//         if(err){
+//             console.log(`Error : ${err}`);
+//             res.end();
+//         }
+//         res.write(data);
+//         res.end();
+//     });
+// })
 
 
-server.listen(3001,'localhost',()=>{
-    console.log('listning port 3001')
-});
+// server.listen(3001,'localhost',()=>{
+//     console.log('listning port 3001')
+// });
